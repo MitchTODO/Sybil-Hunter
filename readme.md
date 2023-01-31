@@ -39,7 +39,7 @@ This project is part of the OpenData Community "DataBuilders" Hackathon 2023. Go
 
 ### Quick Start
 
-[Walk through / Quick Start](https://youtu.be/n44hO0JUGvo)
+[Video Walk through / Quick Start](https://youtu.be/n44hO0JUGvo)
 
 ***Note:*** 
 One thing not mentioned is to download the python packages for legos.
