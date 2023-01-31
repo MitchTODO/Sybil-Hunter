@@ -10,7 +10,7 @@
  # Sybil Hunter 
 
 
-This project is part of the OpenData Community "DataBuilders" Hackathon 2023. Goal of this project is to package algorithms into 'legos' that can be used to evaluate an address based on sybil behavior. Additionally an macOS app extends the capabilities, by enabling a custom pipeline to be create from 'legos' and data sets. The pipeline processes and displays sybil information on a dashboard.
+This project is part of the OpenData Community "DataBuilders" Hackathon 2023. Goal of this project is to package algorithms into 'legos' that can be used to evaluate an address based on sybil behavior. Additionally an macOS app extends the capabilities, by enabling a custom pipeline to be created from 'legos' and data sets. The pipeline processes and displays sybil information on a dashboard.
 
 ---
   * [About](#sybil-hunter)
@@ -74,9 +74,9 @@ Raw booleans allow all lego languages to be applied to the pipeline. Users also 
 
 ## Packaged Legos
 
-Packaged legos are written in python and utilize existing librarys for the algorithm implentation. Each lego outputs a boolean value `True` indicates that sybil was detected, `False` being non-sybil. 
+Packaged legos are written in python and utilize existing librarys for the algorithm implentation. Each lego outputs a boolean value. `True` indicates that sybil was detected and `False` being non-sybil. 
 
-All transaction data comes from a Trueblocks server daemon. This endpoint will need to be modified within each lego in order to work in your environment. The max record parameter is used to prevent over utilization of the Trueblocks server and is set to 10 records (transactions) in all legos. This number should be increased to a optimal 100 records for the most accurate results.
+All transaction data comes from a Trueblocks server daemon. This endpoint will need to be modified within each lego in order to work in your environment. The max record parameter is used to prevent over utilization of the Trueblocks server and is set to 10 records (transactions). This number should be increased to a optimal 100 records for the most accurate results.
 
 ### Kmeans Cluster
 
@@ -90,7 +90,7 @@ Two checks are done before and after clusting. If failed, the input address will
 
 <b><u>Negative</u></b>
 
-Predetemined information is need to increase efficiency on the input address by knowing the address has interacted with a grant round or bulk transfer contract. As this prevents the mis-labeling of sybil behavior as not all automation is considered sybil.
+Predetemined information is needed to increase efficiency to idenifity sybil behavior. By knowing the address has interacted with a grant round or bulk transfer contract prevents the mis-labeling of sybil behavior.
  
 Ocean Protocol Upload: https://arweave.net/BfE7lBM4lDrgnuLKLkzGT3y1gaZR_L7B0zQ6j0cbzgw
 
@@ -122,18 +122,17 @@ Ocean Protocol Upload: https://arweave.net/3alJqjPbN2OoCemSoh-vYfAwT6upuvvpv5EgE
 
 #### Model Training
 
-
-The lego trained on selected transactions from the of Gitcoin bulk donations contract. The bulk donations contracts seemed to be the easiest to filter addresses that display sybil behavior. 
+Legos are trained on selected transactions from the Gitcoin bulk donations contract. The bulk donations contract appear to be the easiest to filter addresses that display sybil behavior. 
 
 Address were discovered using the following filter.
 
-- Top 50 contributor to the bulk donations contracts
+- Top 50 contributors to the bulk donations contract
 - High number of bulk donations to the same grant 
 - High donation amount to the same grant
 
 Non-sybil address filter.
 
-- Top 50 contributors to the bulk donations contracts
+- Top 50 contributors to the bulk donations contract
 - Mid number of bulk donations to the different grants
 - Mid donation amount to the different grants
 
@@ -158,7 +157,6 @@ https://arweave.net/uCgwMC6wRx3jSDGM172ReOWfABIqbBcUqsP0ZPK2HPM
 
 TrueBlock Transactions
 https://arweave.net/onOnRoqQaJnfw2JuFqFNB6owR1wXKz1N_ii-Y5_F2AE
-
 
 
 ---
