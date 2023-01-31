@@ -1,0 +1,30 @@
+{
+  "Outputs" : {
+    "sybil" : {
+      "MLFeatureShortDescription" : "--"
+    }
+  },
+  "Inputs" : {
+    "timeBetween" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "ins" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "outs" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "inAmount" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "topics" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "outAmount" : {
+      "MLFeatureShortDescription" : "--"
+    }
+  },
+  "TrainingInputs" : {
+
+  }
+}

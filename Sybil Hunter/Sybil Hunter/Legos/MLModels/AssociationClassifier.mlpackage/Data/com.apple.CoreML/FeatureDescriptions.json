@@ -1,0 +1,39 @@
+{
+  "Outputs" : {
+    "sybil" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "sybilProbability" : {
+      "MLFeatureShortDescription" : "--"
+    }
+  },
+  "Inputs" : {
+    "outAmount" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "topics" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "address" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "isContract" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "ins" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "timeBetween" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "inAmount" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "outs" : {
+      "MLFeatureShortDescription" : "--"
+    }
+  },
+  "TrainingInputs" : {
+
+  }
+}

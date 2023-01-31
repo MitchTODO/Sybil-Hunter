@@ -1,0 +1,9 @@
+{
+  "MLModelVersionStringKey" : "1.0",
+  "MLModelDescriptionKey" : "For shadows sybil behivor based on transactions.",
+  "MLModelCreatorDefinedKey" : {
+    "com.apple.createml.version" : "13.0.1"
+  },
+  "MLModelAuthorKey" : "Mitchell Tucker",
+  "MLModelLicenseKey" : "MIT"
+}
